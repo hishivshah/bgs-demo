@@ -1,0 +1,8 @@
+<OGRVRTDataSource>
+    <OGRVRTLayer name="rock">
+        <SrcDataSource>CSV:rock.txt</SrcDataSource>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:27700</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="X" y="Y"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

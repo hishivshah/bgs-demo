@@ -1,0 +1,8 @@
+<OGRVRTDataSource>
+    <OGRVRTLayer name="fossil">
+        <SrcDataSource>CSV:fossil.txt</SrcDataSource>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>WGS84</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="Longitude (WGS84)" y="Latitude (WGS84)"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
