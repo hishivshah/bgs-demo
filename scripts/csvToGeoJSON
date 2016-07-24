@@ -5,5 +5,5 @@ cd ../data
 
 # Run ogr2ogr to convert each dataset to geojson
 for name in borehole fossil measurement rock;
-do ogr2ogr -f GeoJSON -t_srs EPSG:3857 $name.json $name.vrt;
+do ogr2ogr -f GeoJSON -t_srs EPSG:4326 $name.json $name.vrt;
 done

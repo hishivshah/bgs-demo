@@ -1,11 +1,11 @@
 {
 "type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
                                                                                 
 "features": [
-{ "type": "Feature", "properties": { "Name": "B1", "Type": "Borehole", "X": "460650.7", "Y": "331169.9", "Z": "245", "Date": "02\/01\/2012", "Time": "13:24:00", "Recorded by": "Bob", "Drilled depth (m)": "26.5" }, "geometry": { "type": "Point", "coordinates": [ -122487.496649674911168, 6959834.196632902137935 ] } },
-{ "type": "Feature", "properties": { "Name": "B2", "Type": "Borehole", "X": "461352.2", "Y": "331510.1", "Z": "275", "Date": "03\/01\/2012", "Time": "10:17:00", "Recorded by": "Brian", "Drilled depth (m)": "21.25" }, "geometry": { "type": "Point", "coordinates": [ -121320.296852166589815, 6960383.546788847073913 ] } },
-{ "type": "Feature", "properties": { "Name": "B3", "Type": "Borehole", "X": "462627.7", "Y": "330643.8", "Z": "235", "Date": "04\/01\/2012", "Time": "15:22:00", "Recorded by": "Gary", "Drilled depth (m)": "15.75" }, "geometry": { "type": "Point", "coordinates": [ -119229.375492074468639, 6958920.409117670729756 ] } },
-{ "type": "Feature", "properties": { "Name": "B4", "Type": "Borehole", "X": "462287.6", "Y": "330537.5", "Z": "240", "Date": "05\/01\/2012", "Time": "08:36:00", "Recorded by": "Trevor", "Drilled depth (m)": "29.5" }, "geometry": { "type": "Point", "coordinates": [ -119793.993753095550346, 6958751.476689036004245 ] } }
+{ "type": "Feature", "properties": { "Name": "B1", "Type": "Borehole", "X": "460650.7", "Y": "331169.9", "Z": "245", "Date": "02\/01\/2012", "Time": "13:24:00", "Recorded by": "Bob", "Drilled depth (m)": "26.5" }, "geometry": { "type": "Point", "coordinates": [ -1.100323903539423, 52.874590678556693 ] } },
+{ "type": "Feature", "properties": { "Name": "B2", "Type": "Borehole", "X": "461352.2", "Y": "331510.1", "Z": "275", "Date": "03\/01\/2012", "Time": "10:17:00", "Recorded by": "Brian", "Drilled depth (m)": "21.25" }, "geometry": { "type": "Point", "coordinates": [ -1.089838769362193, 52.877569090449065 ] } },
+{ "type": "Feature", "properties": { "Name": "B3", "Type": "Borehole", "X": "462627.7", "Y": "330643.8", "Z": "235", "Date": "04\/01\/2012", "Time": "15:22:00", "Recorded by": "Gary", "Drilled depth (m)": "15.75" }, "geometry": { "type": "Point", "coordinates": [ -1.071055703205566, 52.869635943436485 ] } },
+{ "type": "Feature", "properties": { "Name": "B4", "Type": "Borehole", "X": "462287.6", "Y": "330537.5", "Z": "240", "Date": "05\/01\/2012", "Time": "08:36:00", "Recorded by": "Trevor", "Drilled depth (m)": "29.5" }, "geometry": { "type": "Point", "coordinates": [ -1.076127755341236, 52.868719896690131 ] } }
 ]
 }

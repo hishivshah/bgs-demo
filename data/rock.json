@@ -1,11 +1,11 @@
 {
 "type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
                                                                                 
 "features": [
-{ "type": "Feature", "properties": { "Name": "R1", "Type": "Rock", "X": "460687.9", "Y": "332158.5", "Z": "280", "Date": "02\/01\/2012", "Time": "08:30:00", "Recorded by": "Gary", "Rock name": "Limestone", "Image": "LIMESTONE1.jpg" }, "geometry": { "type": "Point", "coordinates": [ -122405.497109249350615, 6961472.463226763531566 ] } },
-{ "type": "Feature", "properties": { "Name": "R2", "Type": "Rock", "X": "460964.3", "Y": "331467.6", "Z": "285", "Date": "03\/01\/2012", "Time": "12:05:00", "Recorded by": "Bob", "Rock name": "Limestone", "Image": "LIMESTONE2.jpg" }, "geometry": { "type": "Point", "coordinates": [ -121962.698748797512962, 6960321.205016761086881 ] } },
-{ "type": "Feature", "properties": { "Name": "R3", "Type": "Rock", "X": "462866.9", "Y": "328927.2", "Z": "235", "Date": "04\/01\/2012", "Time": "13:02:00", "Recorded by": "Trevor", "Rock name": "Sandstone", "Image": "SANDSTONE1.jpg" }, "geometry": { "type": "Point", "coordinates": [ -118870.662290840162314, 6956070.397914994508028 ] } },
-{ "type": "Feature", "properties": { "Name": "R4", "Type": "Rock", "X": "461878.4", "Y": "329352.3", "Z": "265", "Date": "05\/01\/2012", "Time": "15:21:00", "Recorded by": "Brian", "Rock name": "Sandstone", "Image": "SANDSTONE2.jpg" }, "geometry": { "type": "Point", "coordinates": [ -120495.611430122255115, 6956795.8863037629053 ] } }
+{ "type": "Feature", "properties": { "Name": "R1", "Type": "Rock", "X": "460687.9", "Y": "332158.5", "Z": "280", "Date": "02\/01\/2012", "Time": "08:30:00", "Recorded by": "Gary", "Rock name": "Limestone", "Image": "LIMESTONE1.jpg" }, "geometry": { "type": "Point", "coordinates": [ -1.099587289134861, 52.88347226446929 ] } },
+{ "type": "Feature", "properties": { "Name": "R2", "Type": "Rock", "X": "460964.3", "Y": "331467.6", "Z": "285", "Date": "03\/01\/2012", "Time": "12:05:00", "Recorded by": "Bob", "Rock name": "Limestone", "Image": "LIMESTONE2.jpg" }, "geometry": { "type": "Point", "coordinates": [ -1.095609563785099, 52.877231102334918 ] } },
+{ "type": "Feature", "properties": { "Name": "R3", "Type": "Rock", "X": "462866.9", "Y": "328927.2", "Z": "235", "Date": "04\/01\/2012", "Time": "13:02:00", "Recorded by": "Trevor", "Rock name": "Sandstone", "Image": "SANDSTONE1.jpg" }, "geometry": { "type": "Point", "coordinates": [ -1.067833327692709, 52.854178988231297 ] } },
+{ "type": "Feature", "properties": { "Name": "R4", "Type": "Rock", "X": "461878.4", "Y": "329352.3", "Z": "265", "Date": "05\/01\/2012", "Time": "15:21:00", "Recorded by": "Brian", "Rock name": "Sandstone", "Image": "SANDSTONE2.jpg" }, "geometry": { "type": "Point", "coordinates": [ -1.082430494170062, 52.858114176409281 ] } }
 ]
 }

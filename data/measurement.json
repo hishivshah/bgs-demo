@@ -1,11 +1,11 @@
 {
 "type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
                                                                                 
 "features": [
-{ "type": "Feature", "properties": { "Name": "M1", "Type": "Measurement", "Latitude (WGS84)": "52.87897135", "Longitude (WGS84)": "-1.073541362", "Z": "270", "Date": "02\/01\/2012", "Time": "16:05:00", "Recorded by": "Brian", "Porosity": "0.12" }, "geometry": { "type": "Point", "coordinates": [ -119506.077763358785887, 6960642.198190134949982 ] } },
-{ "type": "Feature", "properties": { "Name": "M2", "Type": "Measurement", "Latitude (WGS84)": "52.87629339", "Longitude (WGS84)": "-1.073203182", "Z": "260", "Date": "03\/01\/2012", "Time": "09:17:00", "Recorded by": "Trevor", "Porosity": "0.05" }, "geometry": { "type": "Point", "coordinates": [ -119468.431737960127066, 6960148.24689653608948 ] } },
-{ "type": "Feature", "properties": { "Name": "M3", "Type": "Measurement", "Latitude (WGS84)": "52.87609112", "Longitude (WGS84)": "-1.071706793", "Z": "240", "Date": "04\/01\/2012", "Time": "11:07:00", "Recorded by": "Bob", "Porosity": "0.15" }, "geometry": { "type": "Point", "coordinates": [ -119301.854476452426752, 6960110.939315208233893 ] } },
-{ "type": "Feature", "properties": { "Name": "M4", "Type": "Measurement", "Latitude (WGS84)": "52.88614533", "Longitude (WGS84)": "-1.074494192", "Z": "245", "Date": "05\/01\/2012", "Time": "14:48:00", "Recorded by": "Gary", "Porosity": "0.23" }, "geometry": { "type": "Point", "coordinates": [ -119612.146313770310371, 6961965.593339120037854 ] } }
+{ "type": "Feature", "properties": { "Name": "M1", "Type": "Measurement", "Latitude (WGS84)": "52.87897135", "Longitude (WGS84)": "-1.073541362", "Z": "270", "Date": "02\/01\/2012", "Time": "16:05:00", "Recorded by": "Brian", "Porosity": "0.12" }, "geometry": { "type": "Point", "coordinates": [ -1.073541362, 52.87897135 ] } },
+{ "type": "Feature", "properties": { "Name": "M2", "Type": "Measurement", "Latitude (WGS84)": "52.87629339", "Longitude (WGS84)": "-1.073203182", "Z": "260", "Date": "03\/01\/2012", "Time": "09:17:00", "Recorded by": "Trevor", "Porosity": "0.05" }, "geometry": { "type": "Point", "coordinates": [ -1.073203182, 52.87629339 ] } },
+{ "type": "Feature", "properties": { "Name": "M3", "Type": "Measurement", "Latitude (WGS84)": "52.87609112", "Longitude (WGS84)": "-1.071706793", "Z": "240", "Date": "04\/01\/2012", "Time": "11:07:00", "Recorded by": "Bob", "Porosity": "0.15" }, "geometry": { "type": "Point", "coordinates": [ -1.071706793, 52.87609112 ] } },
+{ "type": "Feature", "properties": { "Name": "M4", "Type": "Measurement", "Latitude (WGS84)": "52.88614533", "Longitude (WGS84)": "-1.074494192", "Z": "245", "Date": "05\/01\/2012", "Time": "14:48:00", "Recorded by": "Gary", "Porosity": "0.23" }, "geometry": { "type": "Point", "coordinates": [ -1.074494192, 52.88614533 ] } }
 ]
 }
