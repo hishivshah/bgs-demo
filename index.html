@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>bgs-assignment</title>
+    <!--Mapbox libraries-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <!--div element to contain map-->
+    <div id='map' style='width: 100%; height: 600px;'></div>
+    <!--javascript for map-->
+    <script>
+    // Mapbox API token
+    mapboxgl.accessToken = 'pk.eyJ1IjoiaGlzaGl2c2hhaCIsImEiOiJjaXIxM2xxamQwMDZzaTRuanR4emN6YW0yIn0.Z5sQE4GOkARQcrLMZxG5gw';
+    // Create map object
+    var map = new mapboxgl.Map({
+        //html element id for map
+        container: 'map',
+        // basemap style
+        style: 'mapbox://styles/mapbox/light-v9',
+        // starting position
+        center: [-1.1, 52.8],
+        zoom: 9
+    });
+    // Add data from GeoJSON files
+    map.on('load', function () {
+        // Borehole data
+        map.addSource('borehole-data', {
+            type: 'geojson',
+            data: 'data/borehole.json'
+        });
+        map.addLayer({
+            id: 'boreholes',
+            type: 'circle',
+            source: 'borehole-data',
+        });
+    });
+    </script>
+</body>
+</html>
