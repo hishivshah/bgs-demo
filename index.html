@@ -8,6 +8,8 @@
     <!--Mapbox libraries-->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.3.0/mapbox-gl-geocoder.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.3.0/mapbox-gl-geocoder.css' type='text/css' />
     <!--css styling for map element-->
     <style>
         body { margin:0; padding:0; }
@@ -31,9 +33,14 @@
         center: [-1.1, 52.8],
         zoom: 9
     });
-    // Add data from GeoJSON files
     map.on('load', function () {
-        // Borehole data
+        // Add geolocation control
+        map.addControl(new mapboxgl.Geolocate());
+        // Add navigation controls
+        map.addControl(new mapboxgl.Navigation());
+        // Add geocoder control
+        map.addControl(new mapboxgl.Geocoder());
+        // Add Borehole data
         map.addSource('borehole-data', {
             type: 'geojson',
             data: 'data/borehole.json'
@@ -46,7 +53,7 @@
                 'circle-color': '#7570b3'
             }
         });
-        // Fossil data
+        // Add fossil data
         map.addSource('fossil-data', {
             type: 'geojson',
             data: 'data/fossil.json'
@@ -59,7 +66,7 @@
                 'circle-color': '#1b9e77'
             }
         });
-        // Measurement data
+        // Add measurement data
         map.addSource('measurement-data', {
             type: 'geojson',
             data: 'data/measurement.json'
@@ -72,7 +79,7 @@
                 'circle-color': '#d95f02'
             }
         });
-        // Rock data
+        // Add rock data
         map.addSource('rock-data', {
             type: 'geojson',
             data: 'data/rock.json'
