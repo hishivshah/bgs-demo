@@ -19,7 +19,7 @@
         //html element id for map
         container: 'map',
         // basemap style
-        style: 'mapbox://styles/mapbox/light-v9',
+        style: 'mapbox://styles/mapbox/dark-v9',
         // starting position
         center: [-1.1, 52.8],
         zoom: 9
@@ -35,6 +35,48 @@
             id: 'boreholes',
             type: 'circle',
             source: 'borehole-data',
+            paint: {
+                'circle-color': '#7570b3'
+            }
+        });
+        // Fossil data
+        map.addSource('fossil-data', {
+            type: 'geojson',
+            data: 'data/fossil.json'
+        });
+        map.addLayer({
+            id: 'fossils',
+            type: 'circle',
+            source: 'fossil-data',
+            paint: {
+                'circle-color': '#1b9e77'
+            }
+        });
+        // Measurement data
+        map.addSource('measurement-data', {
+            type: 'geojson',
+            data: 'data/measurement.json'
+        });
+        map.addLayer({
+            id: 'measurements',
+            type: 'circle',
+            source: 'measurement-data',
+            paint: {
+                'circle-color': '#d95f02'
+            }
+        });
+        // Rock data
+        map.addSource('rock-data', {
+            type: 'geojson',
+            data: 'data/rock.json'
+        });
+        map.addLayer({
+            id: 'rocks',
+            type: 'circle',
+            source: 'rock-data',
+            paint: {
+                'circle-color': '#e7298a'
+            }
         });
     });
     </script>
