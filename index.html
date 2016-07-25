@@ -3,13 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>bgs-assignment</title>
+    <!--Prevent browser resizing the page-->
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <!--Mapbox libraries-->
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' />
+    <!--css styling for map element-->
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
 </head>
 <body>
     <!--div element to contain map-->
-    <div id='map' style='width: 100%; height: 600px;'></div>
+    <div id='map'></div>
     <!--javascript for map-->
     <script>
     // Mapbox API token
