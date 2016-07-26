@@ -93,6 +93,22 @@
             }
         });
     });
+    //Display popup on click
+    map.on('click', function (e) {
+        // Query features at clicked point
+        var features = map.queryRenderedFeatures(e.point, {layers: ['boreholes', 'fossils', 'measurements', 'rocks']});
+        // If no features clicked on, exit function
+        if (!features.length) {
+            return;
+        }
+        // First feature in array
+        var feature = features[0]
+        var popupHTML = '<h1>' + feature.properties.Type + '</h1><p>Recorded: ' + feature.properties.Date + ' ' + feature.properties.Time + '</p>';
+        var popup = new mapboxgl.Popup()
+            .setLngLat(feature.geometry.coordinates)
+            .setHTML(popupHTML)
+            .addTo(map);
+    });
     </script>
 </body>
 </html>
