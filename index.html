@@ -17,8 +17,9 @@
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
         .mapboxgl-popup { font-family: 'Open Sans', sans-serif; }
-        .mapboxgl-popup h1 {font-size: 1.4em; font-weight: 600}
-        .mapboxgl-popup p {font-size: 1em; font-weight:400}
+        .mapboxgl-popup h1 {font-size: 1.4em; font-weight: 600; margin: .5em 0;}
+        .mapboxgl-popup ul {list-style: none; padding: 0; margin: .2em 0;}
+        .mapboxgl-popup li {font-size: 1em; font-weight:400;}
     </style>
 </head>
 <body>
@@ -109,7 +110,15 @@
         // First feature in array
         var feature = features[0]
         // Popup contents
-        var popupHTML = '<h1>' + feature.properties.Type + '</h1><p>Recorded: ' + feature.properties.Date + ' ' + feature.properties.Time + '</p>';
+        var popupHTML = '<h1>'
+                        + feature.properties.Type
+                        + '</h1><ul><li>Recorded: '
+                        + feature.properties.Date + ' ' + feature.properties.Time
+                        + '</li><li>Longitude: '
+                        + feature.geometry.coordinates[0]
+                        + '</li><li>Latitude: '
+                        + feature.geometry.coordinates[1]
+                        + '</li></ul>';
         // Create popup
         var popup = new mapboxgl.Popup()
             .setLngLat(feature.geometry.coordinates)
