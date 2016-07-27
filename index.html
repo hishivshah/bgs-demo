@@ -10,10 +10,15 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.21.0/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.3.0/mapbox-gl-geocoder.js'></script>
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.3.0/mapbox-gl-geocoder.css' type='text/css' />
+    <!--Font import-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!--css styling for map element-->
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
+        .mapboxgl-popup { font-family: 'Open Sans', sans-serif; }
+        .mapboxgl-popup h1 {font-size: 1.4em; font-weight: 600}
+        .mapboxgl-popup p {font-size: 1em; font-weight:400}
     </style>
 </head>
 <body>
@@ -103,12 +108,21 @@
         }
         // First feature in array
         var feature = features[0]
+        // Popup contents
         var popupHTML = '<h1>' + feature.properties.Type + '</h1><p>Recorded: ' + feature.properties.Date + ' ' + feature.properties.Time + '</p>';
+        // Create popup
         var popup = new mapboxgl.Popup()
             .setLngLat(feature.geometry.coordinates)
             .setHTML(popupHTML)
             .addTo(map);
     });
+    // Change cursor style when mouse over clikable point
+    map.on('mousemove', function (e) {
+        // Query features under mouse cursor
+        var features = map.queryRenderedFeatures(e.point, {layers: ['boreholes', 'fossils', 'measurements', 'rocks']});
+        // Change style if features present
+        map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+    })
     </script>
 </body>
 </html>
